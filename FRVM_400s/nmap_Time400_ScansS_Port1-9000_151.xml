@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Fri Oct 16 20:25:41 2020 as: nmap -sS -p 1-9000 -oX nmap_Time400_ScansS_Port1-9000_151.xml -&#45;exclude 10.0.0.1,10.0.0.2 -Pn -&#45;max-retries 0 -&#45;max-rtt-timeout 1000ms 10.0.0.0/22 -->
+<nmaprun scanner="nmap" args="nmap -sS -p 1-9000 -oX nmap_Time400_ScansS_Port1-9000_151.xml -&#45;exclude 10.0.0.1,10.0.0.2 -Pn -&#45;max-retries 0 -&#45;max-rtt-timeout 1000ms 10.0.0.0/22" start="1602879941" startstr="Fri Oct 16 20:25:41 2020" version="6.40" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="9000" services="1-9000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1602879941" endtime="1602880266"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.10" addrtype="ipv4"/>
+<address addr="7A:E5:51:5D:F9:F9" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="9000">
+<extrareasons reason="no-responses" count="9000"/>
+</extraports>
+</ports>
+<times srtt="8276" rttvar="8276" to="100000"/>
+</host>
+<host starttime="1602879941" endtime="1602880272"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.51" addrtype="ipv4"/>
+<address addr="7A:E5:51:5D:F9:F9" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="9000">
+<extrareasons reason="no-responses" count="9000"/>
+</extraports>
+</ports>
+<times srtt="-154059" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1602879941" endtime="1602880272"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.141" addrtype="ipv4"/>
+<address addr="7A:E5:51:5D:F9:F9" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="8999">
+<extrareasons reason="no-responses" count="8999"/>
+</extraports>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" method="table" conf="3"/></port>
+</ports>
+<times srtt="169214" rttvar="122394" to="658790"/>
+</host>
+<host starttime="1602879941" endtime="1602880248"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.249" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="9000">
+<extrareasons reason="no-responses" count="9000"/>
+</extraports>
+</ports>
+<times srtt="-62563" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1602880272" timestr="Fri Oct 16 20:31:12 2020" elapsed="331.14" summary="Nmap done at Fri Oct 16 20:31:12 2020; 1022 IP addresses (4 hosts up) scanned in 331.14 seconds" exit="success"/><hosts up="4" down="1018" total="1022"/>
+</runstats>
+</nmaprun>

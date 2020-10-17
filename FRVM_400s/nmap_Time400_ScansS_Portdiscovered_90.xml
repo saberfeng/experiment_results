@@ -1,0 +1,753 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Fri Oct 16 17:42:10 2020 as: nmap -sS -p 21,22,23,25,69,80,111,137,138,139,445,512,513,514,1099,1524,2121,3306,3632,5432,5900,6000,6667,6697,8009,8180,8787 -oX nmap_Time400_ScansS_Portdiscovered_90.xml -&#45;exclude 10.0.0.1,10.0.0.2 -Pn -&#45;max-retries 0 -&#45;max-rtt-timeout 1000ms 10.0.0.0/22 -->
+<nmaprun scanner="nmap" args="nmap -sS -p 21,22,23,25,69,80,111,137,138,139,445,512,513,514,1099,1524,2121,3306,3632,5432,5900,6000,6667,6697,8009,8180,8787 -oX nmap_Time400_ScansS_Portdiscovered_90.xml -&#45;exclude 10.0.0.1,10.0.0.2 -Pn -&#45;max-retries 0 -&#45;max-rtt-timeout 1000ms 10.0.0.0/22" start="1602870130" startstr="Fri Oct 16 17:42:10 2020" version="6.40" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="27" services="21-23,25,69,80,111,137-139,445,512-514,1099,1524,2121,3306,3632,5432,5900,6000,6667,6697,8009,8180,8787"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1602870130" endtime="1602870207"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.9" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="213752" rttvar="213752" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.12" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ingreslock" method="table" conf="3"/></port>
+</ports>
+<times srtt="277477" rttvar="330486" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870194"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.23" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="137"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-ns" method="table" conf="3"/></port>
+</ports>
+<times srtt="122359" rttvar="140944" to="686135"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.32" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" method="table" conf="3"/></port>
+</ports>
+<times srtt="606501" rttvar="816788" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870207"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.46" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" method="table" conf="3"/></port>
+</ports>
+<times srtt="137692" rttvar="232459" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870196"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.54" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="14929" rttvar="14929" to="100000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.81" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" method="table" conf="3"/></port>
+</ports>
+<times srtt="39695" rttvar="25509" to="141731"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.83" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ccproxy-ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="24340" rttvar="13048" to="100000"/>
+</host>
+<host starttime="1602870130" endtime="1602870190"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.84" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="8180"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="26390" rttvar="21490" to="112350"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.85" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="160206" rttvar="180083" to="880538"/>
+</host>
+<host starttime="1602870130" endtime="1602870207"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.95" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ingreslock" method="table" conf="3"/></port>
+</ports>
+<times srtt="332206" rttvar="390698" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870193"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.98" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="1099"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rmiregistry" method="table" conf="3"/></port>
+</ports>
+<times srtt="140339" rttvar="172357" to="829767"/>
+</host>
+<host starttime="1602870130" endtime="1602870204"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.101" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="138"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-dgm" method="table" conf="3"/></port>
+</ports>
+<times srtt="382905" rttvar="469056" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.102" addrtype="ipv4"/>
+<address addr="7A:E5:51:5D:F9:F9" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="624632" rttvar="785389" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870192"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.107" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="82118" rttvar="66682" to="348846"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.109" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+</ports>
+<times srtt="403086" rttvar="509652" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870203"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.111" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+</ports>
+<times srtt="401086" rttvar="514431" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.112" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+</ports>
+<times srtt="215395" rttvar="257017" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.118" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+</ports>
+<times srtt="455092" rttvar="546213" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.120" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="exec" method="table" conf="3"/></port>
+</ports>
+<times srtt="42121" rttvar="39982" to="202049"/>
+</host>
+<host starttime="1602870130" endtime="1602870203"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.122" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="distccd" method="table" conf="3"/></port>
+</ports>
+<times srtt="455713" rttvar="543875" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.123" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="401548" rttvar="516684" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.124" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="202074" rttvar="224948" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.126" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="6697"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="94689" rttvar="86947" to="442477"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.129" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="100517" rttvar="100517" to="502585"/>
+</host>
+<host starttime="1602870130" endtime="1602870204"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.130" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+</ports>
+<times srtt="341914" rttvar="455760" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.131" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="63336" rttvar="63336" to="316680"/>
+</host>
+<host starttime="1602870130" endtime="1602870203"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.133" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="69"><state state="closed" reason="reset" reason_ttl="64"/><service name="tftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="199444" rttvar="232443" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.148" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11" method="table" conf="3"/></port>
+</ports>
+<times srtt="57970" rttvar="44920" to="237650"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.152" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="337163" rttvar="416776" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.153" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="239580" rttvar="307732" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.154" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="distccd" method="table" conf="3"/></port>
+</ports>
+<times srtt="136170" rttvar="125108" to="636602"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.155" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="117792" rttvar="129397" to="635380"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.157" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="30053" rttvar="30017" to="150121"/>
+</host>
+<host starttime="1602870130" endtime="1602870204"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.159" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+</ports>
+<times srtt="120085" rttvar="186900" to="867685"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.166" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="365128" rttvar="365128" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870203"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.172" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+</ports>
+<times srtt="-18561" rttvar="90492" to="343407"/>
+</host>
+<host starttime="1602870130" endtime="1602870201"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.174" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+</ports>
+<times srtt="-48243" rttvar="47509" to="141793"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.179" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="23513" rttvar="23513" to="117565"/>
+</host>
+<host starttime="1602870130" endtime="1602870204"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.180" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="8787"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="187148" rttvar="214754" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.182" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="23514" rttvar="23514" to="117570"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.184" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="238330" rttvar="238330" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870204"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.190" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" method="table" conf="3"/></port>
+</ports>
+<times srtt="152657" rttvar="156146" to="777241"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.193" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="276148" rttvar="276148" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.199" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" method="table" conf="3"/></port>
+</ports>
+<times srtt="217622" rttvar="256988" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.200" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ccproxy-ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="195123" rttvar="237114" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870201"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.202" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="137"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-ns" method="table" conf="3"/></port>
+</ports>
+<times srtt="67659" rttvar="66694" to="334435"/>
+</host>
+<host starttime="1602870130" endtime="1602870200"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.205" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="6697"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="24304" rttvar="21224" to="109200"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.206" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="1099"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rmiregistry" method="table" conf="3"/></port>
+</ports>
+<times srtt="86585" rttvar="87744" to="437561"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.207" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="160683" rttvar="182837" to="892031"/>
+</host>
+<host starttime="1602870130" endtime="1602870198"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.208" addrtype="ipv4"/>
+<address addr="B6:E3:86:4B:BC:54" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="35823" rttvar="35823" to="179115"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.209" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="82815" rttvar="93502" to="456823"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.210" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+</ports>
+<times srtt="23114" rttvar="17643" to="100000"/>
+</host>
+<host starttime="1602870130" endtime="1602870197"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.212" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="221542" rttvar="221542" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870202"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.213" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="160521" rttvar="182930" to="892241"/>
+</host>
+<host starttime="1602870130" endtime="1602870203"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.214" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+</ports>
+<times srtt="84231" rttvar="90665" to="446891"/>
+</host>
+<host starttime="1602870130" endtime="1602870194"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.215" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="35827" rttvar="35827" to="179135"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.222" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="69"><state state="closed" reason="reset" reason_ttl="64"/><service name="tftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="184670" rttvar="203498" to="998662"/>
+</host>
+<host starttime="1602870130" endtime="1602870206"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.225" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="8787"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="195821" rttvar="212316" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870199"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.226" addrtype="ipv4"/>
+<address addr="92:B9:78:50:6A:0F" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ingreslock" method="table" conf="3"/></port>
+</ports>
+<times srtt="305803" rttvar="279334" to="1000000"/>
+</host>
+<host starttime="1602870130" endtime="1602870201"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.228" addrtype="ipv4"/>
+<address addr="82:DF:C7:31:CD:7C" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="30844" rttvar="23640" to="125404"/>
+</host>
+<host starttime="1602870130" endtime="1602870205"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.245" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="26">
+<extrareasons reason="no-responses" count="26"/>
+</extraports>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" method="table" conf="3"/></port>
+</ports>
+<times srtt="73380" rttvar="56416" to="299044"/>
+</host>
+<host starttime="1602870130" endtime="1602870198"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.247" addrtype="ipv4"/>
+<address addr="4A:04:D9:25:74:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="27">
+<extrareasons reason="no-responses" count="27"/>
+</extraports>
+</ports>
+<times srtt="79749" rttvar="79749" to="398745"/>
+</host>
+<runstats><finished time="1602870207" timestr="Fri Oct 16 17:43:27 2020" elapsed="77.06" summary="Nmap done at Fri Oct 16 17:43:27 2020; 1022 IP addresses (63 hosts up) scanned in 77.06 seconds" exit="success"/><hosts up="63" down="959" total="1022"/>
+</runstats>
+</nmaprun>
