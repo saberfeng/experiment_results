@@ -22,7 +22,7 @@ def run():
 
     param3 = {
         "mode":"dirs",
-        "paths":["./simple_switch_300s", "./simple_switch_100s", "./simple_switch_500s"],
+        "paths":["./simple_switch_100s", "./simple_switch_200s", "./simple_switch_300s", "./simple_switch_400s", "./simple_switch_500s"],
         "output_filename":"./parse_analysis_result/parsed_tSDN.json",
     }
     simple_swtich_result = parse(**param3)
