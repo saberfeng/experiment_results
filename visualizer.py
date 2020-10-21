@@ -35,11 +35,11 @@ class Visualizer:
             "nmap_Time500_ScansS_Portdiscovered",
         ]
         self.x_axis = [100,200,300,400,500]
-        self.x_label = "MTD Interval"
+        self.x_label = "MTD Interval (s)"
         self.y_label = {
             "scanning_success_probability":"Scanning Success Probability",
-            "scanning_mean_min_of_all":"Scanning Mean Time",
-            "scanning_mean_min_each_port":"Scanning Mean Time",
+            "scanning_mean_min_of_all":"Scanning Mean Time (s)",
+            "scanning_mean_min_each_port":"Scanning Mean Time (s)",
         }
 
     def read_analysis_result(self):
