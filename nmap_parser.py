@@ -3,12 +3,7 @@ from xml.etree.ElementTree import ParseError
 import json
 from os import listdir, walk
 from os.path import isfile, join
-
-# {
-#     "address":"10.0.0.1",
-#     "ports":[21,22],
-#     "time":10,
-# }
+from analyzer import Analyzer
 
 def get_host_ports(host):
     port_list = []
@@ -41,7 +36,6 @@ def parse_host(host):
 def parse_file(path):
     tree = ET.parse(path)
     root = tree.getroot()
-    # print(root.tag)
     result = []
     for host in root.findall("host"):
         parsed_host = parse_host(host)
@@ -49,16 +43,8 @@ def parse_file(path):
             result.append(parsed_host)
     return result
 
-def parse_files(file_list):
-    pass
 
 def get_scan_type_key(file_path):
-    # files = [f for f in listdir(directory)]
-    # if len(files) == 0:
-    #     raise Exception("No files in directory:"+directory)
-    # else:
-    #     filename = files[0]
-    # "./FRVM_100s/nmap_Time100_ScansS_Portdiscovered_399.xml"
     file_name = file_path.split("/")[-1]
     key_segments = file_name[:-4].split("_")[:-1]
     return "_".join(key_segments)
@@ -108,7 +94,7 @@ def increment_count(total_result, key):
             "result":[],
         }
 
-def parse(mode, paths):
+def parse(mode, paths, output_filename):
     if mode == "files":
         for path in paths:
             result = parse_file(path)
@@ -121,11 +107,16 @@ def parse(mode, paths):
                 increment_count(total_result, key)
                 try:
                     file_result = parse_file(file_path)
-                except ParseError as e:
+                except ParseError:
                     continue
-                insert_file_scan_result(total_result, key, file_result)
-    with open("output", "w") as f:
-        f.write(json.dumps(total_result, indent=4))
+                if len(file_result) == 0:
+                    continue
+                else:
+                    insert_file_scan_result(total_result, key, file_result)
+
+        with open(output_filename, "w") as f:
+            f.write(json.dumps(total_result, indent=4))
+        return total_result
 
 
 if __name__ == "__main__":
@@ -136,6 +127,16 @@ if __name__ == "__main__":
     param2 = {
         "mode":"dirs",
         "paths":["./FRVM_100s", "./FRVM_200s", "./FRVM_300s", "./FRVM_400s", "./FRVM_500s"],
+        "output_filename":"FRVM_parsed.json",
     }
-    parse(**param2)
+    total_result = parse(**param2)
+
+    param3 = {
+        "mode":"dirs",
+        "paths":["./simple_switch_300s", "./simple_switch_100s"],
+        "output_filename":"simple_switch_parsed.json",
+    }
+    total_result = parse(**param3)
+    # analyzer = Analyzer()
+    # analyzer.run(total_result)
     # print(get_scan_type_key("./FRVM_100s/nmap_Time100_ScansS_Portdiscovered_399.xml"))
